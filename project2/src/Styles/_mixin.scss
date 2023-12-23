@@ -1,0 +1,35 @@
+@media(max-width:480px) {
+    header {
+        div {
+            display: none;
+        }
+
+        nav {
+            div {
+                max-width: 440px;
+                margin: auto;
+
+                ul {
+                    li {
+                        display: none;
+                    }
+                }
+                ul{
+                    .navbaricon{display: block;}
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1900px){
+    header{
+        nav{
+            div{
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Josefin+Slab:wght@300&family=Martel+Sans&display=swap');
+@import 'mixin';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2B3A55;
+    --red: #CE7777;
+    --pink: #E8C4C4;
+    --wihte: #F2E5E5;
+}
+
+$f1: 'Imprima', sans-serif;
+$f2: 'Josefin Slab', serif;
+$f3: 'Martel Sans', sans-serif;
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.con {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: $f2 ;
+    font-weight: 300;
+}
+
+//Header
+ul {
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+header {
+
+    font-family: 'Martek Sans', sans-serif;
+    background-color: var(--red);
+
+    div {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            padding: 5px 0px 5px 0px;
+            font-size: small;
+
+            li {
+                a {
+                    color: var(--blue);
+                }
+            }
+        }
+    }
+
+    nav {
+        background-color: var(--pink);
+        color: var(--blue);
+
+        div {
+            justify-content: space-between;
+            padding-top: 5px;
+            .bold{
+                font-weight: bold;
+            }
+            a:hover{
+                color: var(--wihte);
+            }
+            h1 {
+                font-family: $f2;
+                font-size: xx-large;
+                font-weight: 600;
+            }
+
+            ul {
+                justify-content: center;
+                font-size: medium;
+            }
+            
+        }
+    }
+}
